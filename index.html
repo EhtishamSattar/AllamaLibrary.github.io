@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+    <title>World Famous Library</title>
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Library</a>
+        </div>
+      </nav>
+
+      <div class="container">
+        <form id="formSubmit">
+            <h1 style="margin:180px 0px 50px 0px">ALLAMA LIBRARY</h1>
+            <div class="row mb-3">
+              <label for="book" class="col-sm-2 col-form-label">Book</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="book" placeholder="Book Name">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="author" class="col-sm-2 col-form-label">Author</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="author" placeholder="Author Name">
+              </div>
+            </div>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="fiction" value="fiction" checked>
+                  <label class="form-check-label" for="fiction">
+                    Fiction
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="computerProgramming" value="computerProgramming">
+                  <label class="form-check-label" for="gridRadios2">
+                   Computer Programming
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <input class="form-check-input" type="radio" name="type" id="cooking" value="cooking" >
+                  <label class="form-check-label" for="gridRadios3">
+                    Cooking
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            
+            <button type="submit" class="btn btn-primary">Add Book</button>
+          </form>
+
+          <table class="table table-dark my-5">
+            <thead>
+              <tr>
+                <th scope="col">Book</th>
+                <th scope="col">Author</th>
+                <th scope="col">Type</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+      
+            </tbody>
+          </table>
+      </div>
+      <footer class="bg-light text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+  
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+    
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+    
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright :
+          <a class="text-white" href="#">Allama Library</a>
+        </div>
+  
+      </footer>
+
+      <script src="https://kit.fontawesome.com/0fc6f27886.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
