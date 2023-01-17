@@ -56,10 +56,11 @@ class Display {
 }
 
 // Add submit event listener to libraryForm
-let libraryForm = document.getElementById('libraryForm');
+let libraryForm = document.getElementById('formSubmit');
 libraryForm.addEventListener('submit', libraryFormSubmit);
 
 function libraryFormSubmit(e) {
+    e.preventDefault();
     console.log('YOu have submitted library form');
     let name = document.getElementById('bookName').value;
     let author = document.getElementById('author').value;
